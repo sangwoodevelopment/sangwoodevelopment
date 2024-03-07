@@ -36,7 +36,10 @@
 ![tomcat](https://img.shields.io/badge/comcat-F8DC75.svg?&style=for-the-badge&logo=apachetomcat&logoColor=000000)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?&style=for-the-badge&logo=mongodb&logoColor=white)
 
-### ···
-![instagram](https://img.shields.io/badge/instagram-E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white)
+
 
 </div>
+
+### WHERE TO FIND ME
+![instagram](https://img.shields.io/badge/instagram-E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white)
+![github](https://img.shields.io/badge/github-181717.svg?&style=for-the-badge&logo=github&logoColor=white)
