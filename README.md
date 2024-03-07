@@ -41,5 +41,5 @@
 </div>
 
 ### WHERE TO FIND ME
-![instagram(https://instagram.com/pizzachickenstoryyy)](https://img.shields.io/badge/instagram-E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white)
-![github](https://img.shields.io/badge/github-181717.svg?&style=for-the-badge&logo=github&logoColor=whitehttps://github.com/sangwoodevelopment)
+![instagram](https://img.shields.io/badge/instagram-E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white)
+![github](https://img.shields.io/badge/github-181717.svg?&style=for-the-badge&logo=github&logoColor=white)
