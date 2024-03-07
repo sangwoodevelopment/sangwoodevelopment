@@ -6,7 +6,7 @@
 
 ### 🙇 HI, I'm sangwoo Cho, a junior developer.🌱
 
-### I want to be a person who gives you new wisdom.
+##### I want to be a person who gives you new wisdom.
 
 
 <!-- Body -->
