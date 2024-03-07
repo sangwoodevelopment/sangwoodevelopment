@@ -42,4 +42,4 @@
 
 ### WHERE TO FIND ME
 ![instagram](https://img.shields.io/badge/instagram-E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white)
-![github](https://img.shields.io/badge/github-181717.svg?&style=for-the-badge&logo=github&logoColor=white)
+![github(https://github.com/sangwoodevelopment)](https://img.shields.io/badge/github-181717.svg?&style=for-the-badge&logo=github&logoColor=white)
