@@ -2,6 +2,7 @@
 
 ![Waving](https://capsule-render.vercel.app/api?type=shark&height=300&color=gradient)
 
+<div align="center">
 ![hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsangwoodevelopment&edge_flat=false&title=hits)
 
 ### 🙇 HI, I'm sangwoo Cho, a junior developer.🌱
@@ -35,3 +36,5 @@
 
 ### ···
 ![instagram](https://img.shields.io/badge/instagram-E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white)
+
+</div>
