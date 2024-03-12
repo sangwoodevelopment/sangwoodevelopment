@@ -1,0 +1,43 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: white;
+}
+
+.cal{
+	width: 287px;
+	padding: 5px;
+	border: solid 1px #333;
+	background-color: blue;
+}
+
+.cal form{
+	display: grid;
+	grid-template-columns: repeat(4, 65px);
+	grid-auto-rows: 65px;
+	grid-gap: 5px;
+}
+
+.cal input{
+	border: 2px solid black;
+	cursor: pointer;
+	font-size: 30px;
+}
+
+.cal form input[type='text']{
+	grid-column: span 4;
+	text-align: right;
+}
+
+.cal form .clear{
+	grid-column: span 3;
+}
+
+.cal form .result{
+	grid-column: span 2;
+}
