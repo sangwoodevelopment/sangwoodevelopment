@@ -1,6 +1,6 @@
 <!-- Header -->
 
-![Waving](https://capsule-render.vercel.app/api?type=shark&height=300&color=gradient)
+![Waving](https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=Hi,I'm%20Sangwoo%20&descAlign=45&fontColor=ffffff&fontSize=50&descAlignY=62)
 
 
 ![hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsangwoodevelopment&edge_flat=false&title=hits)
@@ -15,6 +15,7 @@
 <!-- Body -->
 
 ### 🦾 Skills
+
 **🧑‍💻 Platforms & Languages**
 <!-- Oracle의 요청으로 Java 로고가 Simple Icons에서 삭제되었기에 대신 OpenJDK의 로고를 사용 -->
 ![java](https://img.shields.io/badge/java-ffffff.svg?&style=for-the-badge&logo=openjdk&logoColor=black)
@@ -31,9 +32,9 @@
 ![vscode](https://img.shields.io/badge/vscode-007ACC.svg?&style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![eclipse](https://img.shields.io/badge/eclipse-2C2255.svg?&style=for-the-badge&logo=eclipseide&logoColor=white)
 ![intellij](https://img.shields.io/badge/intellij-000000.svg?&style=for-the-badge&logo=intellijidea&logoColor=white)
-![slack](https://img.shields.io/badge/slack-4A154B.svg?&style=for-the-badge&logo=slack&logoColor=white)
+![slack](https://img.shields.io/badge/slack-4A154B.svg?&style=for-the-badge&logo=slack&logoColor=white)<br>
 ![notion](https://img.shields.io/badge/notion-000000.svg?&style=for-the-badge&logo=notion&logoColor=white)
-![tomcat](https://img.shields.io/badge/comcat-F8DC75.svg?&style=for-the-badge&logo=apachetomcat&logoColor=000000)
+![tomcat](https://img.shields.io/badge/tomcat-F8DC75.svg?&style=for-the-badge&logo=apachetomcat&logoColor=000000)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?&style=for-the-badge&logo=mongodb&logoColor=white)
 
 
@@ -43,3 +44,8 @@
 ### WHERE TO FIND ME
 ![instagram](https://img.shields.io/badge/instagram-E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white)
 ![github](https://img.shields.io/badge/github-181717.svg?&style=for-the-badge&logo=github&logoColor=white)
+
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sangwoodevelopment&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
+
+![Sangwoo's GitHub stats](https://github-readme-stats.vercel.app/api?username=sangwoodevelopment&show_icons=true&theme=radical)
