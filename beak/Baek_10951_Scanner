@@ -1,0 +1,15 @@
+package basic;
+
+import java.util.Scanner;
+
+public class Baek_10951_Scanner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		while(scan.hasNextInt()){
+			System.out.println(scan.nextInt()+scan.nextInt());
+		}
+	}
+
+}
