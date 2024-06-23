@@ -1,13 +1,20 @@
 package com.example.nutri_well.SignUp;
 
-import com.example.nutri_well.SignUp.Member;
-import com.example.nutri_well.SignUp.MemberRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public interface MemberService {
-    ResponseDTO registerMember(RequestDTO requestdto);
-
+    //회원가입, 정보 조회, 수정
+    //addmember시 boolean도 추가해줘야함
+    Member registerUser(Member MemberProfile);
+    Optional<Member> findBypassword(String password);
+    Optional<Member> findBygender(String gender);
+    Optional<Member> findByweight(float weight);
+    Optional<Member> findByheight(float height);
+    Optional<Member> findBytel(String tel);
+    Optional<Member> findBypicture(String picture);
+    Member updateUser(Long id, Member updateUserProfile);
+    void deleteUser(Long id);
 }

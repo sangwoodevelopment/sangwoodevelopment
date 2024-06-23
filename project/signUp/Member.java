@@ -1,26 +1,23 @@
 package com.example.nutri_well.SignUp;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.UniqueConstraint;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-//notnull 라이브러리 추가필요
-
-import org.hibernate.annotations.processing.Pattern;
-
-import javax.management.relation.Role;
 
 @Data
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
-//사용자가 주는 요청
-public class RequestDTO {
-    //회원가입 추가
-    //DB에 넣고 싶은 값
+@AllArgsConstructor
+@Entity
+@Builder
+@Table(name = "NUTRI")
+public class Member {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "member_seq")
+    @SequenceGenerator(name = "member_seq",sequenceName = "member_sequence", allocationSize = 1)
+    private Long id;
+
     @Column(nullable = false) //유니크
     private String username;
 
@@ -29,15 +26,13 @@ public class RequestDTO {
     private String email;
 
     @Column(nullable = false)
-    private String gender;
-
-    @Column(nullable = false)
     private String password;
 
     @Column(nullable = false)
     private String birth;
 
-    private String nickName;
+    @Column(nullable = false)
+    private String gender;
 
     private float weight;
 
@@ -47,5 +42,11 @@ public class RequestDTO {
 
     private String picture;
 
-}
+//    @Column(nullable = false)
+//    private boolean state;
+//    //회원탈퇴
 
+//    role
+    //스프링시큐리티에서 사용하는데 일반회원인지 관리자회원인지 역활구분
+    private int basel_metabolism;
+}
