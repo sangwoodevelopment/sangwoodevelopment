@@ -5,7 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Optional;
 @Slf4j
 @Service
@@ -19,32 +21,43 @@ public class MemberServiceImpl implements MemberService {
     @Override
     @Transactional
     //이메일 중복 체크
-    public Member registerUser(Member member){
-        log.debug("member={}",member);
-        System.out.println("member={}"+member);
-        if (memberRepository.findByEmail(member.getEmail()).isPresent()) {
+    public Member registerUser(MemberSignUpDTO memberSignUpDTO){
+        log.debug("memberSignUpDTO={}",memberSignUpDTO);
+        System.out.println("memberSignUpDTO={}"+memberSignUpDTO);
+        if (memberRepository.findByEmail(memberSignUpDTO.getEmail()).isPresent()) {
 
             throw new IllegalArgumentException("이미 사용 중인 이메일입니다");
         }
         //널체크
-        if (member.getId() == null || member.getUsername() == null || member.getEmail() == null || member.getGender() == null || member.getPassword() == null ) {
+        if (memberSignUpDTO.getUsername() == null || memberSignUpDTO.getEmail() == null || memberSignUpDTO.getGender() == null || memberSignUpDTO.getPassword() == null) {
 
             throw new IllegalArgumentException("필수 입력 필드가 누락되었습니다");
         }
+            SimpleDateFormat sf = new SimpleDateFormat("yyyy/MM/dd");
+            Date birthDate;
+        try{
+            birthDate = sf.parse(memberSignUpDTO.getBirth());
+        }catch (ParseException e){
+            throw new IllegalArgumentException("유효하지 않은 생년월일 형식입니다 yyyy/MM/dd");
+        }
 
+                Member member = Member.builder()
+                        .username(memberSignUpDTO.getUsername())
+                        .email(memberSignUpDTO.getEmail())
+                        .password(memberSignUpDTO.getPassword())
+                        .birth(birthDate)
+                        .gender(memberSignUpDTO.getGender())
+                        .weight(Float.parseFloat(memberSignUpDTO.getWeight()))
+                        .height(Float.parseFloat(memberSignUpDTO.getHeight()))
+                        .tel(memberSignUpDTO.getTel())
+                        .picture(memberSignUpDTO.getPicture())
+                        .build();
         return memberRepository.save(member);
-//    public void signUp(MemberSignUpDTO membersignupDTO) throws Exception{
-//        if(memberRepository.findByEmail(membersignupDTO.getEmail()).isPresent()){
-//            throw new Exception("이미 존재하는 이메일입니다");
-//        }
-//        Member member = Member.builder()
-//                .email(membersignupDTO.getEmail())
-//                .password(membersignupDTO.getPassword())
-//                .birth(membersignupDTO.getBirth())
-//                .gender(membersignupDTO.getGender())
-//                .tel(membersignupDTO.getTel())
-//                .build();
-//        memberRepository.save(member);
+    }
+
+    @Override
+    public Optional<Member> findByemail(String email) {
+        return memberRepository.findByEmail(email);
     }
 
     @Override

@@ -1,17 +1,12 @@
 package com.example.nutri_well.SignUp;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.UniqueConstraint;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 //notnull 라이브러리 추가필요
 
-import org.hibernate.annotations.processing.Pattern;
-
-import javax.management.relation.Role;
 
 @Data
 @Builder

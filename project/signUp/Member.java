@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,10 +20,10 @@ public class Member {
     @SequenceGenerator(name = "member_seq",sequenceName = "member_sequence", allocationSize = 1)
     private Long id;
 
-    @Column(nullable = false) //유니크
+    @Column(nullable = false, unique = true) //유니크
     private String username;
 
-    @Column(nullable = false) //= 로그인 시 사용할 계정명
+    @Column(nullable = false, unique = true) //= 로그인 시 사용할 계정명
 //    ex) 1234@naver.com , pass:1234
     private String email;
 
@@ -29,7 +31,7 @@ public class Member {
     private String password;
 
     @Column(nullable = false)
-    private String birth;
+    private Date birth;
 
     @Column(nullable = false)
     private String gender;
